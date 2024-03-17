@@ -5,7 +5,6 @@ const prefix = '/src/docs';
 export default defineConfig({
   title: "word-demo",
   description: "笔记文档",
-  base: '/dhx-note/',
   assetsDir: 'public', // 指定资源目录
   lastUpdated: true,
   themeConfig: {
