@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/dhx-note/',
   lastUpdated: true,
   themeConfig: {
-    logo: '/public/images/logo.svg',
+    logo: '/images/logo.svg',
     editLink: {
       pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path'
     },
