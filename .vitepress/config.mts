@@ -5,6 +5,7 @@ const prefix = '/src/docs';
 export default defineConfig({
   title: "word-demo",
   description: "笔记文档",
+  base: '/dhx-note/'
   lastUpdated: true,
   themeConfig: {
     logo: '/public/images/logo.svg',
