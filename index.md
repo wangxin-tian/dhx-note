@@ -20,7 +20,7 @@ hero:
 
 features:
   - icon:
-      src: /images/icon-1.svg
+      src: "https://snow_sharon.gitee.io/tuchuang/imgs/icon-1.svg"
       width: 100%
       height: auto
     title: 基于React+Nest的个人博客
@@ -28,7 +28,7 @@ features:
     link: "http://118.195.140.233:3000/home"
     target: _blank
   - icon:
-      src: /images/icon-2.svg
+      src: "https://snow_sharon.gitee.io/tuchuang/imgs/icon-2.svg"
       width: 100%
       height: auto
     title: 基于spring boot+vue3的个人网盘
@@ -44,7 +44,7 @@ features:
 
 <div class="article-box">
   <div class="article-avatar-wrap">
-    <img src="/public/images/logo.svg" alt="dhx" class="article-avatar" />
+    <img src="/public/logo.svg" alt="dhx" class="article-avatar" />
     <div class="animation"></div>
   </div>
   
