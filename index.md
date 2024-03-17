@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "word_demo"
   text: "弟皇前端"
-  tagline: My great project tagline
+  tagline: 前端学习整理，这里没有花活，我相信<span class="red">启蒙</span>的重要性；大道殊途同归，任何一门语言摸索到顶峰皆是<span class="yellow">计算机科学</span>和<span class="green">业务管理</span>；江畔何人初见月，江月何年初照人。
   # image: "/public/images/background.svg"
   actions:
     - theme: brand
@@ -115,6 +115,18 @@ features:
     background-attachment: fixed;
     background-position: right bottom;
     background-repeat: no-repeat;
+  }
+
+  .red {
+    color: #bd34fe;
+  }
+
+  .yellow {
+    color: #ffae1a;
+  }
+
+  .green {
+    color: #36c12c;
   }
 
   .title {

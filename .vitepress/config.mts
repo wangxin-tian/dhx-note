@@ -6,6 +6,7 @@ export default defineConfig({
   title: "word-demo",
   description: "笔记文档",
   base: '/dhx-note/',
+  assetsDir: 'public', // 指定资源目录
   lastUpdated: true,
   themeConfig: {
     logo: 'logo.svg',
@@ -19,6 +20,21 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '案例', link: '/markdown-examples' },
+      { text: '文档', items: [
+        { text: '小程序', link: '/api-examples' },
+        { text: '工程化', link: '/api-examples' },
+        { text: '模块化', link: '/api-examples' },
+        { text: '业务管理', link: '/api-examples' },
+        { text: '框架设计', link: '/api-examples' },
+        { text: 'web 3D', link: '/api-examples' },
+        { text: '操作系统', link: '/api-examples' },
+        { text: '真理之门', link: '/api-examples' },
+      ]},
+      { text: '工具库', items: [
+        { text: '特效库', link: '/api-examples' },
+        { text: '功能库', link: '/api-examples' },
+        { text: 'dhx-UI', link: '/api-examples' }
+      ]}
     ],
 
     sidebar: [
