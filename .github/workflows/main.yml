@@ -1,6 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
-
+name: Deploy vitepress with GitHub Pages 
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -38,7 +37,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
 
   # Deployment job
   deploy:
