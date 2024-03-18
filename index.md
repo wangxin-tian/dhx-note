@@ -44,7 +44,7 @@ features:
 
 <div class="article-box">
   <div class="article-avatar-wrap">
-    <img src="/public/logo.svg" alt="dhx" class="article-avatar" />
+    <img src="/logo.svg" alt="dhx" class="article-avatar" />
     <div class="animation"></div>
   </div>
   
@@ -243,7 +243,11 @@ features:
     color: #aaa;
   }
 
-  .VPNavBarMenuLink {
+  .VPNavBarMenuLink, .button .text {
     font-weight: bold !important;
   }
+
+  .button .text {
+    color: purple;
+  } 
 </style>

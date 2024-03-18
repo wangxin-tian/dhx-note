@@ -33,7 +33,9 @@ export default defineConfig({
         { text: '特效库', link: '/api-examples' },
         { text: '功能库', link: '/api-examples' },
         { text: 'dhx-UI', link: '/api-examples' }
-      ]}
+      ]},
+      { text: '关于', link: '/about' },
+      { text: '友链', link: '/src/pages/friends/index.html' },
     ],
 
     sidebar: [
