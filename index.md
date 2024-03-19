@@ -39,12 +39,11 @@ features:
     
 ---
 
-
 ## 个人简介:
 
 <div class="article-box">
   <div class="article-avatar-wrap">
-    <img src="/logo.svg" alt="dhx" class="article-avatar" />
+    <img src="https://snow_sharon.gitee.io/tuchuang/imgs/logo.svg" alt="dhx" class="article-avatar" />
     <div class="animation"></div>
   </div>
   

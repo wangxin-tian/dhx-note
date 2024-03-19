@@ -1,3 +1,6 @@
+---
+layout: home
+---
 # github ci
 
 实现GitHub上的自动部署
