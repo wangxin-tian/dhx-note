@@ -13,7 +13,7 @@ export default defineConfig({
     lineNumbers: true
   },
   themeConfig: {
-    logo: 'logo.svg',
+    logo: 'https://snow_sharon.gitee.io/tuchuang/imgs/logo.svg',
     editLink: {
       pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path'
     },
