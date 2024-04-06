@@ -2,5 +2,7 @@
   "files.associations": {
     "*.vue": "vue",
     "*.vue.md": "markdown"
-  }
+  },
+  "digital-ide.welcome.show": false,
+  "liveServer.settings.port": 5501
 }

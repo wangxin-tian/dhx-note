@@ -1,0 +1,1 @@
+export type _get<T> = (obj: T, key: string, defaultVal: string) => T[keyof T] | any;
