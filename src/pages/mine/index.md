@@ -7,7 +7,7 @@ layout: home
 
 <div class="article-box">
   <div class="article-avatar-wrap">
-    <img src="https://snow_sharon.gitee.io/tuchuang/imgs/logo.svg" alt="dhx" class="article-avatar" />
+    <img src="https://dhx.liangmoren.com/public/85c0447d25074e6491e6aa18847cfb717ec0888f92b62b4af.jpg" alt="dhx" class="article-avatar" />
     <div class="animation"></div>
   </div>
   
@@ -18,7 +18,6 @@ layout: home
     {{`君子尚拙, 以璞为真;
     克己慎独, 守心明性。`}}
     </p>
-    <div class="time">{{ currentTime }}</div>
   </div>
   
 </div>
@@ -76,6 +75,14 @@ layout: home
         justify-content: center;
         align-items: center;
         z-index: 2;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          box-shadow: 0 0 10px #fff;
+        }
 
         .animation {
           width: 160px;

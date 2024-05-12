@@ -13,37 +13,57 @@ hero:
       link: /src/pages/docs/
 
     - theme: alt
-      text: 经典案例
+      text: 1000 经典案例
       link: /examples
 
     - theme: alt
-      text: 工具 API
-      link: /api-examples
-
-features:
-  - icon:
-      width: 100%
-      height: auto
-    title: 基于React+Nest的个人博客
-    details: 登录鉴权，文章管理，标签管理，文章的发布、编辑、删除、搜索
-    link: "http://118.195.140.233:3000/home"
-    target: _blank
-  - icon:
-      width: 100%
-      height: auto
-    title: 基于spring boot+vue3的个人网盘
-    details: 文件资源的管理，包括文件的上传、下载、删除、搜索、编辑
-    link: "http://118.195.140.233:3000/home"
-  - title: 个人图床
-    details: 支持上传图片，但不允许删除
-    link: "http://dhx.liangmoren.com/"
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-   
+      text: 个人项目
+      link: /projects
+# features:
+#   - icon:
+#       width: 100%
+#       height: auto
+#     title: 基于React+Nest的个人博客
+#     details: 登录鉴权，文章管理，标签管理，文章的发布、编辑、删除、搜索
+#     link: "http://118.195.140.233:3000/home"
+#     target: _blank
+#   - icon:
+#       width: 100%
+#       height: auto
+#     title: 基于spring boot+vue3的个人网盘
+#     details: 文件资源的管理，包括文件的上传、下载、删除、搜索、编辑
+#     link: "http://118.195.140.233:3000/home"
+#   - title: 个人图床
+#     details: 支持上传图片，但不允许删除
+#     link: "http://dhx.liangmoren.com/"
+#   - title: Feature C
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
 <script setup>
   // import Template from './template.vue'
+  import { useData } from 'vitepress'
+  import MyCalender from './src/component/MyCalender.vue';
+  const { articles } = useData().theme.value;
+
+  Array.toSorted || (Array.prototype.toSorted = function (compareFn) {
+    return this.slice(0).sort(compareFn);
+  });
+
+  const orderedArticles = articles.toSorted((a, b) => a.order - b.order).slice(0, 8);
+
+  function openArticle(article) {
+    // console.log(article.link, window.location.origin)
+    // window.open(window.location.origin + '/src' + article.link, '_self');
+  }
+
+  const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+
+  function getRandomColor(key) {
+    const index = key % colors.length;
+    return colors[index];
+  }
+
   false && (() => {
     const list = [0,1,7,9,5,6,25];
     const bodyStyle = document.body.style;
@@ -60,6 +80,39 @@ features:
   })(); /** 图片切换 */
 </script>
 
+<div class="wrap">
+   <div v-for="(article, index) in orderedArticles" :key="index" class="container">
+     <a class="VPLink link VPFeature flex-row" :href="article.link" style="text-decoration: none" target="_self">
+       <div v-if="article.image" class="image">
+          <img :src="article.image" alt="">
+       </div>
+       <div class="VPHomeGridItem">
+         <h3 class="title" style="padding: 0; margin: 0;">
+           {{ article.title }}
+         </h3>
+         <div class="details">
+           <span class="">{{ article.description }}</span>
+         </div>
+         <div class="details">
+          <div v-if="article.tags.length" class="tags">
+            <span
+             v-for="(tag, key) in article.tags"
+             :key="key"
+             class="tag"
+             :class="`bg-${getRandomColor(key)}`"
+           >{{ tag }}</span>
+           <span class="">{{ article.date }}</span>
+          </div>
+         </div>
+       </div>
+     </a>
+  </div>
+</div>
+
+## 本月撰写 <span>（{{ (new Date().getMonth() + 1) + '月'}}）</span>
+
+<MyCalender :articles="articles"/>
+
 <style lang="scss">
   :root {
     --vp-home-hero-name-color: transparent;
@@ -74,18 +127,6 @@ features:
     background-repeat: no-repeat;
   }
 
-  .red {
-    color: #bd34fe;
-  }
-
-  .yellow {
-    color: #ffae1a;
-  }
-
-  .green {
-    color: #36c12c;
-  }
-
   .title {
     --vp-c-text-1: #832dac;
   }
@@ -93,6 +134,14 @@ features:
   .dark .title {
     --vp-c-text-1: #fff;
   }
+
+  .VPHomeGridItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 24px;
+    height: 100%;
+}
 
   .VPNavBarMenuLink, .button .text {
     font-weight: bold !important;
@@ -103,10 +152,10 @@ features:
   }
 
   .grid-4 > .VPLink {
-    box-shadow: 0 0 4px #0005;
+    box-shadow: 0 0 1px #00000096;
 
     &:hover {
-      box-shadow: 0 0 4px var(--vp-c-brand-1);
+      box-shadow: 0 0 1px var(--vp-c-brand-1);
     }
   }
 

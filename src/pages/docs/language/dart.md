@@ -1,4 +1,4 @@
-# dart
+# Dart
 
 如果你已经有了js的基础，那么学习dart会非常轻松。
 
@@ -18,6 +18,14 @@ void main() {
   // 8. 并发处理：内置Isolate支持轻量级线程，高效并发
 }
 ```
+
+## 学习扩展
+
+Flutter
+
+::: tip
+  [Flutter中文网](https://flutterchina.club/)
+:::
 
 ## 数据类型
 

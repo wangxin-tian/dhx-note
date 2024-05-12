@@ -13,3 +13,13 @@
 
 JS能让你真正做出成果，并且能过早的过度到音视频和图像的处理中，也是现今使用最广泛的语言。
 :::
+
+## 扩展
+
+- TypeScript
+- Node
+- Vue
+- React
+- Angular
+- Electron
+- WebAssembly

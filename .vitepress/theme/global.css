@@ -1,0 +1,114 @@
+.red {
+  color: #bd34fe;
+}
+
+.yellow {
+  color: #ffae1a;
+}
+
+.green {
+  color: #36c12c;
+}
+  
+.bg-red {  
+  background-color: #ffa5a5; /* 淡红色 */  
+}  
+  
+.bg-blue {  
+  background-color: #add8e6; /* 淡蓝色 */  
+}  
+  
+.bg-green {  
+  background-color: #90ee90; /* 淡绿色 */  
+}  
+  
+.bg-yellow {  
+  background-color: #ffffe0; /* 淡黄色 */  
+}  
+  
+.bg-purple {  
+  background-color: #dda0dd; /* 淡紫色 */  
+}  
+  
+.bg-orange {  
+  background-color: #ffa500; /* 淡橙色 */  
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1152px;
+}
+
+.container + .container {
+  margin-top: 40px;
+}
+
+.VPFeature {
+  display: block;
+  border: 1px solid var(--vp-c-bg-soft);
+  border-radius: 12px;
+  height: 100%;
+  background-color: var(--vp-c-bg-soft);
+  transition: border-color 0.25s, background-color 0.25s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+
+.VPFeature.link:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+.details {
+  flex-grow: 1;
+  padding-top: 8px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+}
+
+.tag {
+  padding: 3px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-bg-soft);
+  margin-right: 8px;
+}
+
+.tag:last-child {
+  margin-right: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  padding: 10px;
+}
+
+.image img {
+  height: 140px;
+  width: 224px;
+  border-radius: 8px;
+  aspect-ratio: 8/5;
+  object-fit: cover;
+}
+
+.image img:hover {
+  transform: scale(1.05);
+  transition: transform 0.25s;
+}
+
+.image img:active {
+  transform: scale(0.95);
+  transition: transform 0.25s;
+}
