@@ -43,6 +43,7 @@ const sidebar: DefaultTheme.Sidebar = [
         collapsed: true,
         items: [
           { text: "开发生态", link: `${prefix_docs}/base/` },
+          { text: "数据库", link: `${prefix_docs}/sql/` },
           { text: "跨端开发", link: `${prefix_docs}/applet/` },
           { text: "工程化", link: `${prefix_docs}/engineer/` },
           { text: "模块化", link: `${prefix_docs}/modelization/` },
