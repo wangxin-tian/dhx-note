@@ -6,6 +6,9 @@ hero:
   name: "word_demo"
   text: "弟皇前端"
   tagline: 江畔何人初见月，江月何年初照人。
+  image:
+    src: "https://dhx.liangmoren.com/public/img_(0).jpeg"
+    alt: "hero"
 
   actions:
     - theme: brand
@@ -42,8 +45,8 @@ hero:
 
 <script setup>
   // import Template from './template.vue'
+  // import MyCalender from './src/component/MyCalender.vue';
   import { useData } from 'vitepress'
-  import MyCalender from './src/component/MyCalender.vue';
   const { articles } = useData().theme.value;
 
   Array.toSorted || (Array.prototype.toSorted = function (compareFn) {
@@ -82,8 +85,8 @@ hero:
 
 <div class="wrap">
    <div v-for="(article, index) in orderedArticles" :key="index" class="container">
-     <a class="VPLink link VPFeature flex-row" :href="article.link" style="text-decoration: none" target="_self">
-       <div v-if="article.image" class="image">
+     <a class="VPLink link VPFeature flex-row article-item" :href="article.link" style="text-decoration: none" target="_self">
+       <div v-if="article.image" class="article-image">
           <img :src="article.image" alt="">
        </div>
        <div class="VPHomeGridItem">
@@ -109,9 +112,9 @@ hero:
   </div>
 </div>
 
-## 本月撰写 <span>（{{ (new Date().getMonth() + 1) + '月'}}）</span>
+<!-- ## 本月撰写 <span>（{{ (new Date().getMonth() + 1) + '月'}}）</span> -->
 
-<MyCalender :articles="articles"/>
+<!-- <MyCalender :articles="articles"/> -->
 
 <style lang="scss">
   :root {

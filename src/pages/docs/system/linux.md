@@ -27,8 +27,8 @@
 7. 打开配置文件 `vi nginx.conf`
 8. 更新apt-get `apt-get update`
 9. 下载vim `apt-get install vim`
-10. 查看nginx状态 `ps -ef|grep nginx`
-11. 下载ps `apt-get install -y procps`
+10. 下载ps `apt-get install -y procps`
+11. 查看nginx状态 `ps -ef|grep nginx`
 12. 下载netstat `apt-get install -y net-tools`
 13. 查看占用 `netstat -tulpn`
 14. 退出实例 `exit`

@@ -4,5 +4,9 @@
     "*.vue.md": "markdown"
   },
   "digital-ide.welcome.show": false,
-  "liveServer.settings.port": 5519
+  "liveServer.settings.port": 5519,
+  "markdownlint.config": {
+    "MD033": false,
+    "MD041": false
+  }
 }

@@ -10,7 +10,7 @@
 - 基于react的taro框架开发
 - [Flutter原生开发](./flutter.md)
 - [ReactNative原生开发](./reactnative.md)
-- electron桌面应用开发
+- [Electron桌面应用开发](./electron.md)
 
 ## 优势
 

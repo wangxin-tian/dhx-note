@@ -12,7 +12,7 @@ const themeConfig: DefaultTheme.Config & any = {
 	search: { provider: "local" },
   nav: nav,
   sidebar: sidebar,
-	socialLinks: [ { icon: "github", link: "https://github.com/vuejs/vitepress" } ],
+	socialLinks: [ { icon: "github", link: "https://github.com/wangxin-tian" } ],
   articles: articles
 };
 

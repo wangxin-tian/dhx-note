@@ -55,6 +55,7 @@ const sidebar: DefaultTheme.Sidebar = [
           { text: "操作系统", link: `${prefix_docs}/system/` },
           { text: "网络", link: `${prefix_docs}/internet/` },
           { text: "GIS", link: `${prefix_docs}/gis/` },
+          { text: "JS嵌入式", link: `${prefix_docs}/espjs/` },
           { text: "真理之门", link: `${prefix_docs}/door/` },
         ],
       },

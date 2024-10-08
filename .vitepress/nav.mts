@@ -25,8 +25,9 @@ const nav: DefaultTheme.NavItem[] = [
       { text: "脚手架", link: `${prefix_tools}/cli/` },
     ],
   },
-  { text: "关于↗", link: `${prefix_about}/` },
-  { text: "友链↗", link: "/src/pages/friends/index.html" },
+  { text: "关于", link: `${prefix_about}/` },
+  { text: "友链", link: "/src/pages/friends/index.html" },
+  { text: "Github", link: "https://github.com/wangxin-tian" },
 ];
 
 export default nav;
