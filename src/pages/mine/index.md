@@ -49,17 +49,34 @@ layout: home
 - 与其临渊羡鱼，不如退而结网。
 
 <style lang="scss">
+    @media screen and (max-width: 960px) {
+      .article-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        &>div + div {
+          width: 100%;
+        }
+      }
+    }
+
+    @media screen and (min-width: 960px) {
+      .article-box {
+        flex-direction: row;
+        align-items: center;
+
+        &>div + div {
+          width: 60%;
+        }
+      }
+    }
+
     .article {
     &-box {
       width: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
       align-items: center;
-
-      &>div + div {
-        width: 60%;
-      }
     }
 
     &-avatar {

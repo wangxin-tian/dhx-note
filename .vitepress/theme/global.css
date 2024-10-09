@@ -41,6 +41,11 @@
   }
 }
 
+/* 修改可爱字体 */
+body {
+	font-family: 'Comic Sans MS', cursive !important;
+}
+
 .red {
   color: #bd34fe;
 }

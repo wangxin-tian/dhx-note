@@ -49,6 +49,8 @@ hero:
   import { useData } from 'vitepress'
   const { articles } = useData().theme.value;
 
+  // console.log(useData().site.value.themeConfig.sidebar[0].items.push());
+
   Array.toSorted || (Array.prototype.toSorted = function (compareFn) {
     return this.slice(0).sort(compareFn);
   });
