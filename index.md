@@ -144,7 +144,7 @@ hero:
     flex-direction: column;
     padding: 12px 24px;
     height: 100%;
-}
+  }
 
   .VPNavBarMenuLink, .button .text {
     font-weight: bold !important;
